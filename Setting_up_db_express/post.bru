@@ -1,0 +1,20 @@
+meta {
+  name: post
+  type: http
+  seq: 1
+}
+
+post {
+  url: http:localhost:3000/users
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name":"madhu",
+    "age":"18",
+    "email": "madhu@2006",
+    "password":"madhuPassword"
+  }
+}
